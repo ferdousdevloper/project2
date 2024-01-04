@@ -2,17 +2,34 @@
     padding: 0;
     margin: 0;
     font-family: 'josefin sans', sans serif;
+    
+    
 }
-.about{
+/*Background color start*/
+.bg{
     height: 100vh;
     width: 100vw;
-    object-fit: cover;
     position: fixed;
-    z-index: -999;
+    background-color: rgb(14, 10, 17);
+    animation: ani 5s infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+/*Background color end*/
+/*Background animation start*/
+@keyframes ani{
+    0%{ background-color: #191919;}
+    25%{background-color:rgb(39, 39, 39);}
+    50%{background-color:rgb(53, 53, 53)}
+    75%{background-color:rgb(76, 76, 77)}
+    100%{background-color:rgb(121, 121, 121)}
+}
+/*Background animation end*/
+.about{
+    position: relative;
+    top: 200px;
     
-    /* background-size: cover; */
-    padding: 200px 0px;
-    background-color: #191919;
+    
 }
 .about img{
     height: auto;
